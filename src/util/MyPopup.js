@@ -2,7 +2,6 @@ import React from "react";
 import { Popup } from "semantic-ui-react";
 
 function MyPopup({ content, children }) {
-  console.log(content, "con");
   return (
     <Popup
       inverted

@@ -5,7 +5,6 @@ import gql from "graphql-tag";
 import { useMutation } from "@apollo/react-hooks";
 import MyPopup from "../util/MyPopup";
 function LikeButton({ user, post: { id, likeCount, likes } }) {
-  console.log({ id });
   const [liked, setLiked] = useState(false);
   useEffect(() => {
     if (user && likes.find((like) => like.username === user.username))
